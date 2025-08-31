@@ -1,1 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+// 🎨 Colors
+@use 'variables';
+
+body {
+  margin: 0;
+  font-family: variables.$font-family;
+  color: variables.$text-color;
+  background: variables.$light-bg;
+}

@@ -1,0 +1,17 @@
+<div class="tabs">
+  <ul class="tab-headers">
+    <li
+      *ngFor="let tab of tabs; let i = index"
+      [class.active]="i === activeIndex"
+      (click)="selectTab(i)"
+    >
+      {{ tab.label }}
+    </li>
+  </ul>
+
+  <div class="tab-content">
+    <ng-container *ngIf="tabs.length > 0">
+      <ng-container *ngTemplateOutlet="tabs[activeIndex].content"></ng-container>
+    </ng-container>
+  </div>
+</div>

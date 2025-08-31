@@ -1,0 +1,21 @@
+@use '../variables' as *;
+
+.showcase {
+  padding: $spacing-xl;
+  font-family: $font-family;
+
+  h1 {
+    text-align: center;
+    margin-bottom: $spacing-lg;
+  }
+
+  section {
+    margin: $spacing-xl 0;
+  }
+
+  .card-grid {
+    display: flex;
+    gap: $spacing-lg;
+    flex-wrap: wrap;
+  }
+}
