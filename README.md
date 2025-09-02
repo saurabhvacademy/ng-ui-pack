@@ -1,59 +1,39 @@
-# NgUiPack
+# ng-ui-pack 🚀
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.1.0.
+A lightweight Angular 17+ UI component pack with modern design, dark mode-ready SCSS, and zero dependencies.
 
-## Development server
+## ✨ Features
+- Buttons (Primary, Secondary, Danger, Disabled)
+- Modal (Reusable, Overlay, Custom Content)
+- Navbar (Responsive, Dropdown, Hamburger menu)
+- Cards (Image + Text + Actions)
+- Tabs (Switch content areas)
+- Toasts (Success, Error, Info with auto-dismiss)
 
-To start a local development server, run:
-
+## 📦 Installation
 ```bash
-ng serve
-```
+npm install ng-ui-pack
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+(For now, clone and use locally until published on npm)
 
-## Code scaffolding
+🚀 Usage
+Button
+<app-button></app-button>
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+Modal
+<button (click)="modal.open()">Open Modal</button>
+<app-modal #modal title="Hello">
+  <p>Content goes here</p>
+</app-modal>
 
-```bash
-ng generate component component-name
-```
+Toast
+<button (click)="toast.show('Success!', 'success')">Show Toast</button>
+<app-toast #toast></app-toast>
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+🌓 Theming
 
-```bash
-ng generate --help
-```
+Easily customize SCSS variables in src/_variables.scss.
 
-## Building
+Example:
 
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+$primary-color: #4caf50; // change theme to green
