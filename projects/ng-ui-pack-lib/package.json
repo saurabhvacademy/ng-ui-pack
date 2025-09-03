@@ -1,0 +1,16 @@
+{
+  "name": "@saurabhvacademy/ng-ui-pack",   
+  "version": "0.1.0",
+  "description": "Lightweight Angular 17+ UI component pack (Buttons, Modal, Navbar, Cards, Tabs, Toast)",
+  "author": "Saurabh Sharma",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/saurabhvacademy/ng-ui-pack"
+  },
+  "keywords": ["angular", "ui-pack", "components", "angular17", "modal", "toast", "navbar"],
+  "peerDependencies": {
+    "@angular/common": "^17.0.0",
+    "@angular/core": "^17.0.0"
+  }
+}

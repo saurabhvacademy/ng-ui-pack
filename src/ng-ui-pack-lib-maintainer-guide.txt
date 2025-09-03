@@ -1,0 +1,118 @@
+# ng-ui-pack-lib Maintainer Guide 🛠️
+
+This guide explains the regular tasks and commands needed to maintain and publish your Angular UI library (`ng-ui-pack-lib`).
+
+---
+
+## 1. Library Development
+- All components should live inside:
+  `projects/ng-ui-pack-lib/src/lib/`
+- Exports must be listed in:
+  `projects/ng-ui-pack-lib/src/public-api.ts`
+
+Example export:
+```ts
+export * from './lib/Button/button/button';
+```
+
+---
+
+## 2. Build the Library
+Command:
+```bash
+ng build ng-ui-pack-lib
+```
+This compiles your library into the `dist/ng-ui-pack-lib/` folder, which is the package ready for testing or publishing.
+
+---
+
+## 3. Test Locally in Demo App
+To make sure your changes work before publishing, install the built library into your showcase/demo app:
+```bash
+npm install ./dist/ng-ui-pack-lib
+ng serve
+```
+This allows you to test your components as a real consumer.
+
+---
+
+## 4. Version Bump
+Every release must increment the version number in `projects/ng-ui-pack-lib/package.json`.
+
+Options:
+```bash
+npm version patch   # For small bug fixes (0.0.x → 0.0.x+1)
+npm version minor   # For new features (0.x.y → 0.x+1.0)
+npm version major   # For breaking changes (x.y.z → x+1.0.0)
+```
+
+---
+
+## 5. Publish to npm
+Once tested, publish the new version:
+```bash
+cd dist/ng-ui-pack-lib
+npm publish --access public
+```
+Your library will then be available on npm.
+
+---
+
+## 6. Update Demo App (Showcase)
+To consume the newly published version in your demo app:
+```bash
+npm install ng-ui-pack-lib@latest
+```
+This ensures the demo site reflects the latest package.
+
+---
+
+## 7. Deploy Showcase (GitHub Pages)
+Rebuild your demo app for GitHub Pages:
+```bash
+ng build --base-href /ng-ui-pack/
+```
+Deploy to `gh-pages` branch:
+```bash
+npx angular-cli-ghpages --dir=dist/ng-ui-pack/browser
+```
+Check it live at:
+`https://<username>.github.io/ng-ui-pack/`
+
+---
+
+## 8. Keep Documentation Updated
+- Update `projects/ng-ui-pack-lib/README.md` → shows up on npm package page.
+- Update the repo root `README.md` → includes demo link, install instructions, and usage examples.
+
+---
+
+# ✅ Most Common Workflow
+
+When making a change:
+
+```bash
+# 1. Build library
+ng build ng-ui-pack-lib
+
+# 2. Test locally in demo app
+npm install ./dist/ng-ui-pack-lib
+ng serve
+
+# 3. Publish new version
+npm version patch     # or minor/major
+ng build ng-ui-pack-lib
+cd dist/ng-ui-pack-lib
+npm publish --access public
+
+# 4. Update demo app
+npm install ng-ui-pack-lib@latest
+
+# 5. Deploy showcase
+ng build --base-href /ng-ui-pack/
+npx angular-cli-ghpages --dir=dist/ng-ui-pack/browser
+```
+
+---
+
+⚡ Pro Tip: Always test locally in your demo app **before publishing** to npm. This prevents buggy versions from being uploaded.

@@ -1,11 +1,13 @@
 import { Component, signal } from '@angular/core';
-import { Button } from './components/Button/button/button';
-import { Modal } from './components/Modal/modal/modal';
-import { Navbar } from './components/Navbar/navbar/navbar';
-import { Card } from './components/Card/card/card';
-import { Tabs } from './components/Tabs/tabs/tabs';
-import { Tab } from './components/Tabs/tabs/tab/tab';
-import { Toast } from './components/Toast/toast/toast';
+// import { Button } from './components/Button/button/button';
+// import { Modal } from './components/Modal/modal/modal';
+// import { Navbar } from './components/Navbar/navbar/navbar';
+// import { Card } from './components/Card/card/card';
+// import { Tabs } from './components/Tabs/tabs/tabs';
+// import { Tab } from './components/Tabs/tabs/tab/tab';
+// import { Toast } from './components/Toast/toast/toast';
+import {Button, Modal, Navbar, Card, Tabs, Tab, Toast} from 'ng-ui-pack-lib';
+
 
 @Component({
   selector: 'app-root',
