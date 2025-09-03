@@ -8,3 +8,11 @@ body {
   color: variables.$text-color;
   background: variables.$light-bg;
 }
+
+pre {
+  background: #f4f4f4;
+  padding: variables.$spacing-md;
+  border-radius: variables.$radius-sm;
+  overflow-x: auto;
+  font-size: 0.9rem;
+}

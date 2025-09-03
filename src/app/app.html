@@ -1,17 +1,16 @@
 <div class="showcase">
- <header class="hero">
-  <h1>ng-ui-pack 🚀</h1>
-  <p>A lightweight Angular 17+ UI component pack</p>
-  <a href="https://github.com/saurabhvacademy/ng-ui-pack" target="_blank" class="btn primary">View on GitHub</a>
-</header>
+  <header class="hero">
+    <h1>ng-ui-pack 🚀</h1>
+    <p>A lightweight Angular 17+ UI component pack</p>
+    <a href="https://github.com/saurabhvacademy/ng-ui-pack" target="_blank" class="btn primary">View on GitHub</a>
+  </header>
 
 
   <section>
-  <h2>Buttons</h2>
-  <app-button></app-button>
-
-  <pre><code>&lt;app-button&gt;&lt;/app-button&gt;</code></pre>
-</section>
+    <h2>Buttons</h2>
+    <app-button></app-button>
+    <pre><code>&lt;app-button&gt;&lt;/app-button&gt;</code></pre>
+  </section>
 
   <section>
     <h2>Modal</h2>
@@ -19,11 +18,13 @@
     <app-modal #modal title="Demo Modal">
       <p>This is a reusable modal from ng-ui-pack 🎉</p>
     </app-modal>
+    <pre><code>&lt;app-modal #modal title="Demo Modal"&gt;</code></pre>
   </section>
 
   <section>
     <h2>Navbar</h2>
     <app-navbar></app-navbar>
+    <pre><code>&lt;app-navbar&gt;&lt;/app-navbar&gt;</code></pre>
   </section>
 
   <section>
@@ -36,25 +37,38 @@
         <button class="btn danger">Delete</button>
       </app-card>
     </div>
+    <pre><code>&lt;app-card title="Card One" description="Demo card 1" image="image_url"&gt;</code></pre>
   </section>
 
   <section>
     <h2>Tabs</h2>
     <app-tabs>
       <app-tab label="Tab A">
-        <ng-template><p>Content A</p></ng-template>
+        <ng-template>
+          <p>Content A</p>
+        </ng-template>
       </app-tab>
       <app-tab label="Tab B">
-        <ng-template><p>Content B</p></ng-template>
+        <ng-template>
+          <p>Content B</p>
+        </ng-template>
       </app-tab>
     </app-tabs>
+    <pre><code>&lt;app-tabs&gt;</code></pre>
   </section>
 
   <section>
     <h2>Toast</h2>
-    <button class="btn success" (click)="toast.show('Success message ✅', 'success')">Success</button>
-    <button class="btn danger" (click)="toast.show('Error occurred ❌', 'error')">Error</button>
-    <button class="btn secondary" (click)="toast.show('Info message ℹ️', 'info')">Info</button>
+    <button class="btn success" (click)="toast.show('Success! ✅','success')">Success</button>
+    <button class="btn danger" (click)="toast.show('Error ❌','error')">Error</button>
+    <button class="btn secondary" (click)="toast.show('Info ℹ️','info')">Info</button>
+
     <app-toast #toast></app-toast>
+
+    <pre><code>
+&lt;button (click)="toast.show('Success!','success')"&gt;Success&lt;/button&gt;
+&lt;app-toast #toast&gt;&lt;/app-toast&gt;
+  </code></pre>
   </section>
+
 </div>
