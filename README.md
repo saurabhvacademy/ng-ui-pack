@@ -21,19 +21,21 @@ Install via npm:
 ```bash
 npm install ng-ui-pack-lib
 
----
 
 🚀 Usage
 Button
+```bash
 <app-button></app-button>
 
 Modal
+```bash
 <button (click)="modal.open()">Open Modal</button>
 <app-modal #modal title="Hello">
   <p>Content goes here</p>
 </app-modal>
 
 Toast
+```bash
 <button (click)="toast.show('Success!', 'success')">Show Toast</button>
 <app-toast #toast></app-toast>
 
