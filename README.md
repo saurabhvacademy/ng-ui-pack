@@ -1,20 +1,25 @@
 # ng-ui-pack 🚀
 
-A lightweight Angular 17+ UI component pack with modern design, dark mode-ready SCSS, and zero dependencies.
+A lightweight Angular 17+ UI component pack with modern design, dark mode-ready SCSS, and zero dependencies.  
+Published on npm as **ng-ui-pack-lib** (early release v0.0.1).
+
+---
 
 ## ✨ Features
-- Buttons (Primary, Secondary, Danger, Disabled)
-- Modal (Reusable, Overlay, Custom Content)
-- Navbar (Responsive, Dropdown, Hamburger menu)
-- Cards (Image + Text + Actions)
-- Tabs (Switch content areas)
-- Toasts (Success, Error, Info with auto-dismiss)
+- **Buttons** → Primary, Secondary, Danger, Disabled
+- **Modal** → Reusable, Overlay, Custom Content
+- **Navbar** → Responsive, Dropdown, Hamburger menu
+- **Cards** → Image + Text + Actions
+- **Tabs** → Switch content areas
+- **Toasts** → Success, Error, Info with auto-dismiss
+
+---
 
 ## 📦 Installation
-```bash
-npm install ng-ui-pack
+Install via npm:
 
-(For now, clone and use locally until published on npm)
+```bash
+npm install ng-ui-pack-lib
 
 🚀 Usage
 Button
@@ -32,8 +37,25 @@ Toast
 
 🌓 Theming
 
-Easily customize SCSS variables in src/_variables.scss.
+Easily customize SCSS variables in _variables.scss.
 
 Example:
 
 $primary-color: #4caf50; // change theme to green
+
+📖 Demo
+
+Check out the live showcase:
+👉 ng-ui-pack Demo
+https://saurabhvacademy.github.io/ng-ui-pack
+
+📌 Status
+
+Version: 0.0.1 (experimental)
+
+Components may change rapidly
+
+Contributions & feedback are welcome!
+ 
+
+
