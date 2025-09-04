@@ -18,7 +18,6 @@ Published on npm as **ng-ui-pack-lib** (early release v0.0.1).
 ## 📦 Installation
 Install via npm:
 
-```bash
 npm install ng-ui-pack-lib
 
 🚀 Usage
