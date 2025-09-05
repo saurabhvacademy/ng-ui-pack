@@ -3,7 +3,7 @@
 /tmp
 /out-tsc
 /.angular/cache
-/docs
+/docs   # reserved for GitHub Pages builds, not for project docs
 
 # --- Dependencies ---
 /node_modules
@@ -33,3 +33,7 @@ testem.log
 
 # --- Misc ---
 /typings
+*.tgz
+.env
+.env.local
+.history/
