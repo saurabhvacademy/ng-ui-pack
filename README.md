@@ -56,7 +56,7 @@ Check out the live showcase:
 👉 ng-ui-pack Demo
 https://saurabhvacademy.github.io/ng-ui-pack
 
-📌 Status
+## 📌 Status
 
 Version: 0.0.1 (experimental)
 
