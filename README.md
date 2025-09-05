@@ -21,29 +21,36 @@ Install via npm:
 ```bash
 npm install ng-ui-pack-lib
 
-🚀 Usage
-Button
+```
+## 🚀 Usage
+### Button
+```html
 <app-button></app-button>
 
-Modal
+```
+### Modal
+```html
 <button (click)="modal.open()">Open Modal</button>
 <app-modal #modal title="Hello">
   <p>Content goes here</p>
 </app-modal>
 
-Toast
+```
+### Toast
+```html
 <button (click)="toast.show('Success!', 'success')">Show Toast</button>
 <app-toast #toast></app-toast>
+```
 
-🌓 Theming
+### 🌓 Theming
 
 Easily customize SCSS variables in _variables.scss.
 
 Example:
-
 $primary-color: #4caf50; // change theme to green
 
-📖 Demo
+
+### 📖 Demo
 
 Check out the live showcase:
 👉 ng-ui-pack Demo
