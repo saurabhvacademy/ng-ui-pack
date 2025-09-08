@@ -1,0 +1,23 @@
+{
+  "overrides": [
+    {
+      "files": ["*.ts"],
+      "parserOptions": {
+        "project": [
+          "tsconfig.json",
+          "tsconfig.app.json",
+          "projects/ng-ui-pack-lib/tsconfig.lib.json",
+          "projects/ng-ui-pack-lib/tsconfig.spec.json",
+          "tsconfig.eslint.json"    // <- add this line
+        ],
+        "createDefaultProgram": false
+      },
+      "extends": ["plugin:@angular-eslint/recommended"],
+      "rules": {}
+    },
+    {
+      "files": ["*.html"],
+      "extends": ["plugin:@angular-eslint/template/recommended"]
+    }
+  ]
+}
